@@ -1,0 +1,11 @@
+.bike {
+  border: 1px solid rgb(14, 14, 25);
+  border-radius: 10px;
+}
+.bikeImg {
+  display: flex;
+  justify-content: center;
+}
+.bikeImg img {
+  width: 100%;
+}

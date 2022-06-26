@@ -1,0 +1,57 @@
+[
+  {
+    "img": "https://i.ibb.co/n0nhRs5/bike-1.jpg ",
+
+    "name": "2022 M 1000 RR",
+    "description": "Your competitive spirit drives you. Your passion dominates and challenges you. The search for more defines every millisecond: pure motorsport. High performance, high-tech materials, the highest-quality workmanship and exclusivity down to the last detail: The M RR is the first M model from BMW Motorrad. Its genes come directly from professional racing. The M RR and M RR with M Competition package offers pure racing technology for the highest performance demands in motorsport and for adrenalin-driven perfectionists on the road. Because #NeverStopChallenging is more than a promise. It’s a commitment.",
+    "price": "$36,995",
+    "quantity": 100,
+    "supplier": "BMW",
+    "id": 1
+  },
+  {
+    "supplier": "BMW",
+    "id": 2,
+    "name": "2022 M 1000 RR 50 Years M",
+    "img": "https://i.ibb.co/8NH9cnt/bike-2.jpg",
+    "price": "$36,995",
+    "quantity": 90,
+    "description": "24 May 1972. BMW Motorsport GmbH and today’s BMW M GmbH launch operations.   The goal had been clearly defined – and it was revolutionary for the circumstances at the time: BMW’s racing activities would be bundled and professionalized under one roof. Motorsport with its diverse challenges would fuel the construction of vehicles and engines. The iconic BMW Motorsport emblem with the three colors blue, red and violet is a striking, distinguishing feature."
+  },
+  {
+    "supplier": "BMW",
+    "id": 3,
+    "name": "2022 S 1000 RR",
+    "img": "https://i.ibb.co/SwGCwjC/bike-3.jpg",
+    "description": "Always pushing to the limit and in search of the ideal line, you've got 205 HP beneath you. Unbridled power pushes your RR to the max - with a maximum torque of 83 lb-ft at 11,000 rpm and a torque curve of at least 74 lb-ft over a range of 5,500 to 14,500 [rpm]. Ten years after the first generation of the RR first mesmerized the world of motorcycles, we're now entering the next level of performance. We have updated almost every component of the RR - from the front to the rear. The result: less weight and noticeably higher performance. Are you ready for the pole position and for victory? The RR awaits you.",
+    "price": " $24,374",
+    "quantity": 101
+  },
+  {
+    "supplier": "BMW",
+    "id": 4,
+    "img": "https://i.ibb.co/B4zxnYB/bike-4.jpg",
+    "name": "2022 R 1250 RS",
+    "price": " $18,870",
+    "description": "Each tour is determined by two factors: time and distance. With the  BMW R 1250 RS you can get more out of every tour. The rich 105 lb-ft torque and 136 hp of the boxer engine accelerate you quickly to your cruising speed. The innovative BMW ShiftCam technology offers you more torque over the entire speed range, so you can rocket to an impressive sprint in every riding situation. The redesigned front gives the full-LED headlight a fresh, sporty look and performs or rides aerodynamically into the wind. This way, you can ride quickly and comfortably at any time. One thing is certain - no matter how much road you ride, with the R 1250 RS your riding pleasure grows with every mile you ride.",
+    "quantity": 100
+  },
+  {
+    "supplier": "BMW",
+    "id": 5,
+    "name": "2022 K 1600 GT",
+    "description": "Your trip is perfect if you have forgotten everything you left behind after the first corner. When you feel an irresistible drive, in response to the smallest command. In other words: When you have everything you need, but you still get more than before: more comfort, more performance. The legendary six-cylinder K 1600 GT now drives you forward with even more focus. In keeping with this, the new cockpit has been fully geared towards your needs. For an outstanding performance tour when you are out and about. A fully fledged #RideAndShare.",
+    "price": "$23,895",
+    "quantity": 50,
+    "img": "https://i.ibb.co/yNjk5f0/bike-5.jpg"
+  },
+  {
+    "supplier": "BMW",
+    "id": 16,
+    "name": "2022 R 1250 RT",
+    "price": "$24,195",
+    "description": "The R 1250 RT is the perfect companion for your tour: Its legendary BMW ShiftCam Boxer engine pulls just as powerfully over country roads as it does over winding mountain passes. Its new front end makes it look more dynamic and slimmer. On the other hand, there is a wide range of features such as the extra-large 10.25 TFT display or available Active Cruise Control (ACC) - providing extra comfort on your journey. At the end of the day, you sit back relaxed knowing that the next tour is always the greatest. ",
+    "quantity": 70,
+    "img": "https://i.ibb.co/XtNJx38/bike-6.jpg"
+  }
+]
