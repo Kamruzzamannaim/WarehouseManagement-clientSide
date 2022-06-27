@@ -1,0 +1,20 @@
+.testimonals-container {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+
+  padding: 50px;
+}
+.testimonials {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 50px;
+  width: 50%;
+}
+.testimonials h3 {
+  font-weight: 500;
+}
+.testimonials p {
+  font-size: 20;
+}

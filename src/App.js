@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Blog from './components/pages/Blog/Blog';
+import Footer from './components/pages/Footer/Footer';
 import Header from './components/pages/Home/Header/Header';
 import Home from './components/pages/Home/Home/Home';
 import Login from './components/pages/Login/Login/Login';
@@ -19,6 +20,7 @@ function App() {
      <Route path='/login' element={<Login></Login>}></Route>
      <Route path='/registration' element={<Registration></Registration>}></Route>
      </Routes>
+     <Footer></Footer>
      <ToastContainer></ToastContainer>
     </div>
   );
