@@ -5,6 +5,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import auth from "../../../../firebase.init";
+import SocialLogin from "../SocialLogin/SocialLogin";
 const Login = () => {
     const emailRef = useRef("");
   const navigate = useNavigate();
@@ -82,7 +83,7 @@ const Login = () => {
           Please register
         </button>
       </p>
-      <p>
+      <p className="text-center">
         Forget Password?
         <button
           className="btn btn-link text-primary pe-auto text-decoration-none"
@@ -91,6 +92,9 @@ const Login = () => {
           Reset Password
         </button>
         </p>
+      <div className="social  text-center">
+      <SocialLogin></SocialLogin>
+      </div>
     </div>
   );
 };
