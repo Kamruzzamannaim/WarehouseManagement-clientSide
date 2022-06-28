@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import './Bike.css';
 const Bike = ({bike}) => {
   const  {name,img,description,price,quantity,id}=bike;
+  const Navigate=useNavigate()
   const handleUpdate=(id)=>{
-    console.log(id);
+   Navigate(`/products/${id}`);
   
   }
     return (

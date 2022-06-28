@@ -1,12 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
+import Manage from './components/Manage/Manage';
 import Blog from './components/pages/Blog/Blog';
 import Footer from './components/pages/Footer/Footer';
 import Header from './components/pages/Home/Header/Header';
 import Home from './components/pages/Home/Home/Home';
 import Login from './components/pages/Login/Login/Login';
 import Registration from './components/pages/Login/Registration/Registration';
+import Product from './components/pages/Product/Product';
 
 function App() {
   return (
@@ -19,7 +21,10 @@ function App() {
      <Route path='/blog' element={<Blog></Blog>}></Route>
      <Route path='/login' element={<Login></Login>}></Route>
      <Route path='/registration' element={<Registration></Registration>}></Route>
+     <Route path='/products/:id' element={<Product></Product>}></Route>
+     <Route path='/manage' element={<Manage></Manage>}></Route>
      </Routes>
+     
      <Footer></Footer>
      <ToastContainer></ToastContainer>
     </div>
