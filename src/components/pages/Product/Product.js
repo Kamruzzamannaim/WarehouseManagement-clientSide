@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import UseProducts from "../../hooks/UseProducts";
 import "./Product.css";
 
@@ -49,7 +49,7 @@ fetch(url, requestOptions)
         <p>Quantity: {product[0]?.quantity}</p>
         {/* <p>Quantity: {quantity}</p> */}
       </div>
-      <button className="d-flex mx-auto mt-3" onClick={() => handleDelivered(product[0]?._id)}>
+      <button className="d-flex mx-auto mt-3 btn btn-primary" onClick={() => handleDelivered(product[0]?._id)}>
         Delivered
       </button>
       <br />
@@ -59,9 +59,12 @@ fetch(url, requestOptions)
      
       <div className="d-flex mx-auto justify-content-center align-items-center p-3">
       <input type="number"placeholder="product quantity" name="quantity" className="mb-3 p-3" ref={quantityRef}/>
-        <input className="btn btn-primary" type="submit" value="restore" onClick={()=>handleRestore(product[0]?._id)} />
+        <input className="btn btn-outline-primary" type="submit" value="restore" onClick={()=>handleRestore(product[0]?._id)} />
       </div>
       
+      <Link className="text-decoration-none" to="/manage">
+          <button  className="d-flex mx-auto my-3 decoration-none btn btn-primary">Manage items</button>
+        </Link>
     </div>
   );
 };

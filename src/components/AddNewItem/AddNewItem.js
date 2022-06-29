@@ -1,5 +1,5 @@
 
-const AddNewUser = () => {
+const AddNewItem = () => {
     const handleForm=(event)=>{
         event.preventDefault();
         const name= event.target.name.value;
@@ -9,12 +9,11 @@ const AddNewUser = () => {
         const supplier= event.target.supplier.value;
         const description=event.target.description.value;
         console.log(name,imageUrl,price,quantity,supplier,description);
-        
-
-    }
+}
+   
     return (
         <div>
-            <h2 className="text-center mt-4">Add new user</h2>
+             <h2 className="text-center mt-4">Add new user</h2>
             <form onSubmit={handleForm} className="d-flex flex-column w-50 m-auto">
                 <input type="text"placeholder="product name" name="name" className="mb-3"/>
                 <input type="text"placeholder="image URL" name="imageUrl" className="mb-3"/>
@@ -30,4 +29,4 @@ const AddNewUser = () => {
     );
 };
 
-export default AddNewUser;
+export default AddNewItem;

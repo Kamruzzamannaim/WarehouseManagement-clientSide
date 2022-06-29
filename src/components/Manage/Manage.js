@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import UseProducts from "../hooks/UseProducts";
 import "./Manage.css";
 
@@ -23,7 +24,12 @@ const Manage = () => {
   };
 
   return (
-    <div className="products">
+   <div>
+    <Link className="text-decoration-none" to="/addNewItem">
+          <button  className="d-flex mx-auto my-3 decoration-none btn btn-primary">Add new items</button>
+        </Link>
+        <div className="products">
+      
       {products.map((bike) => (
         <ManageProduct
           key={bike._id}
@@ -32,6 +38,7 @@ const Manage = () => {
         ></ManageProduct>
       ))}
     </div>
+   </div>
   );
 };
 

@@ -22,10 +22,16 @@ const Header = () => {
             <Nav className="me-auto"></Nav>
             <Nav>
               <Nav.Link as={Link} to='/'>Home</Nav.Link>
-              <Nav.Link 
+             {
+              user && <Nav>
+                 <Nav.Link 
               as={Link} to='/manage'>Manage</Nav.Link>
               <Nav.Link 
-              as={Link} to='/addNewUser'>Add new user</Nav.Link>
+              as={Link} to='/addNewItem'>Add new item</Nav.Link>
+              <Nav.Link 
+              as={Link} to='/myItem'>My item</Nav.Link>
+              </Nav>
+             }
               <Nav.Link as={Link} to='/blog'>Blogs</Nav.Link>
               <Nav.Link as={Link} to="/about">
                 About
