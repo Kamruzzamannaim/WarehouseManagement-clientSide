@@ -5,6 +5,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import auth from "../../../../firebase.init";
+import Loading from "../../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
 const Login = () => {
     const emailRef = useRef("");
@@ -29,7 +30,7 @@ const Login = () => {
     signInWithEmailAndPassword(email,password);
   };
   if (loading || sending) {
-    return <p>Loading</p>;
+    return <Loading></Loading>
   }
   if (user) {
     navigate(from, { replace: true });
