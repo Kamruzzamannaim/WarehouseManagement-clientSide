@@ -49,7 +49,7 @@ fetch(url, requestOptions)
         <p>Quantity: {product[0]?.quantity}</p>
         {/* <p>Quantity: {quantity}</p> */}
       </div>
-      <button onClick={() => handleDelivered(product[0]?._id)}>
+      <button className="d-flex mx-auto mt-3" onClick={() => handleDelivered(product[0]?._id)}>
         Delivered
       </button>
       <br />
@@ -57,9 +57,9 @@ fetch(url, requestOptions)
       {/* <input type="text" placeholder="quantity number" />
       <button onClick={()=>handleRestore(product[0]?._id)}>Restore</button> */}
      
-      <div>
-      <input type="number"placeholder="product quantity" name="quantity" className="mb-3" ref={quantityRef}/>
-        <input type="submit" value="restore" onClick={()=>handleRestore(product[0]?._id)} />
+      <div className="d-flex mx-auto justify-content-center align-items-center p-3">
+      <input type="number"placeholder="product quantity" name="quantity" className="mb-3 p-3" ref={quantityRef}/>
+        <input className="btn btn-primary" type="submit" value="restore" onClick={()=>handleRestore(product[0]?._id)} />
       </div>
       
     </div>
