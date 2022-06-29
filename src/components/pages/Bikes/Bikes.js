@@ -3,12 +3,8 @@ import Bike from '../Bike/Bike';
 import './Bikes.css';
 
 const Bikes = () => {
-//     const [bikes,setBikes]=useState([])
-//     useEffect(()=>{
-// fetch('product.json')
-// .then(res=>res.json())
-// .then(data=>setBikes(data));
-//     },[])
+   
+
 const [bikes]=UseProducts();
     return (
         <div>
@@ -16,7 +12,7 @@ const [bikes]=UseProducts();
            <div className="bikes">
           
            {
-              bikes.map(bike=><Bike key={bike.id} bike={bike}></Bike>)
+              bikes.map(bike=><Bike key={bike._id} bike={bike}></Bike>)
             }
            </div>
         </div>

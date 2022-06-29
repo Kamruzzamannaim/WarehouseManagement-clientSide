@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './Bike.css';
 const Bike = ({bike}) => {
-  const  {name,img,description,price,quantity,id}=bike;
+  const  {name,img,description,price,quantity,_id}=bike;
   const Navigate=useNavigate()
   const handleUpdate=(id)=>{
    Navigate(`/products/${id}`);
@@ -18,7 +18,7 @@ const Bike = ({bike}) => {
             <p>{description}</p>
             <p>Price: {price}</p>
            <p>Quantity: {quantity}</p>
-           <button type="button" className="btn btn-outline-primary  "onClick={()=>handleUpdate(id)}>Update</button>
+           <button type="button" className="btn btn-outline-primary  "onClick={()=>handleUpdate(_id)}>Update</button>
            </div>
         </div>
     );
