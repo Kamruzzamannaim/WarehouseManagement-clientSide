@@ -4,6 +4,7 @@ import './App.css';
 import AddNewItem from './components/AddNewItem/AddNewItem';
 import Manage from './components/Manage/Manage';
 import MyItem from './components/Myitem/MyItem';
+import NoPageFound from './components/NoPageFound/NoPageFound';
 import Blog from './components/pages/Blog/Blog';
 import Footer from './components/pages/Footer/Footer';
 import Header from './components/pages/Home/Header/Header';
@@ -28,6 +29,7 @@ function App() {
      <Route path='/manage' element={<RequiredAuth><Manage></Manage></RequiredAuth>}></Route>
      <Route path='/addNewItem' element={<AddNewItem></AddNewItem>}></Route>
      <Route path='/myItem' element={<MyItem></MyItem>}></Route>
+     <Route path='*' element={<NoPageFound></NoPageFound>}></Route>
      </Routes>
      
      <Footer></Footer>

@@ -1,14 +1,28 @@
-
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 const AddNewItem = () => {
+    const [user] = useAuthState(auth);
+    const email=(user?.email);
     const handleForm=(event)=>{
         event.preventDefault();
         const name= event.target.name.value;
-        const imageUrl= event.target.imageUrl.value;
+        const img= event.target.imageUrl.value;
         const price= event.target.price.value;
         const quantity= event.target.quantity.value;
         const supplier= event.target.supplier.value;
         const description=event.target.description.value;
-        console.log(name,imageUrl,price,quantity,supplier,description);
+        console.log(name,img,price,quantity,supplier,description,email);
+        const newItem={name,img,price,quantity,supplier,description,email};
+        fetch('http://localhost:5000/bike',{
+            method:'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(newItem)
+        })
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+        
 }
    
     return (
