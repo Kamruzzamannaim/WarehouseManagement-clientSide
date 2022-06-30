@@ -11,7 +11,7 @@ const MyItem = () => {
     const myItems = products.filter(product=>product.email===user?.email);
     console.log(myItems);
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/bike/${id}`;
+        const url = `https://bike-web-server.herokuapp.com/bike/${id}`;
         const confirm= window.confirm('do you want to delete?');
         if(confirm){
           fetch(url, {

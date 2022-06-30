@@ -4,7 +4,7 @@ const UseProducts = () => {
   
     const [products,setProducts]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/bikes')
+        fetch('https://bike-web-server.herokuapp.com/bikes')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])

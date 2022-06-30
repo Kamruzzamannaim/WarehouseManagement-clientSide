@@ -13,7 +13,8 @@ const AddNewItem = () => {
         const description=event.target.description.value;
         console.log(name,img,price,quantity,supplier,description,email);
         const newItem={name,img,price,quantity,supplier,description,email};
-        fetch('http://localhost:5000/bike',{
+        // https://bike-web-server.herokuapp.com/
+        fetch('https://bike-web-server.herokuapp.com/bike',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

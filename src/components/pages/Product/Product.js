@@ -6,29 +6,30 @@ import "./Product.css";
 
 const Product = () => {
   const { id } = useParams();
-
   const [products] = UseProducts();
   const product = products.filter((p) => p._id === id);
+  // handle delivery
   const handleDelivered = (id) => {
-    const newQuantiy = product[0]?.quantity - 1;
-    const url = `http://localhost:5000/bike/${id}`;
-    const requestOptions = {
+    const newQuantity = product[0]?.quantity - 1;
+    console.log(newQuantity);
+    const url = `https://bike-web-server.herokuapp.com/bike/${id}`;
+
+    fetch(url, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ quantity: newQuantiy }),
-    };
-    fetch(url, requestOptions)
+      body: JSON.stringify({ quantity: newQuantity }),
+    })
       .then((response) => response.json())
-      .then((data) => console.log(data));
-      window.location.reload();
-     
-  
-   
+      .then((data) => window.location.reload());
+    // window.location.reload();
   };
   const quantityRef = useRef(0);
+  // handle restore
   const handleRestore = (id) => {
     const quantity = quantityRef.current.value;
-    const url = `http://localhost:5000/bike/${id}`;
+
+    const url = `https://bike-web-server.herokuapp.com/bike/${id}`;
+
     const requestOptions = {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -36,9 +37,8 @@ const Product = () => {
     };
     fetch(url, requestOptions)
       .then((response) => response.json())
-      .then((data) => console.log(data));
+      .then((data) => window.location.reload());
 
-    window.location.reload();
     toast("product quantity updated");
   };
   return (
@@ -51,7 +51,6 @@ const Product = () => {
         <p>{product[0]?.description}</p>
         <p>Price: {product[0]?.price}</p>
         <p>Quantity: {product[0]?.quantity}</p>
-        {/* <p>Quantity: {quantity}</p> */}
       </div>
       <button
         className="d-flex mx-auto mt-3 btn btn-primary"
@@ -60,9 +59,6 @@ const Product = () => {
         Delivered
       </button>
       <br />
-
-      {/* <input type="text" placeholder="quantity number" />
-      <button onClick={()=>handleRestore(product[0]?._id)}>Restore</button> */}
 
       <div className="d-flex mx-auto justify-content-center align-items-center p-3">
         <input
