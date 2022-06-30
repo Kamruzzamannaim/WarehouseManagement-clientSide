@@ -1,5 +1,5 @@
-// client_side_repo: https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Kamruzzamannaim
-server_site_repo: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Kamruzzamannaim
+## client_side_repo: https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Kamruzzamannaim
+//server_site_repo: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Kamruzzamannaim
 live_site: https://bike-warehouse-b07ab.web.app/
 stackoverflow_qus: https://stackoverflow.com/questions/72821845/how-can-i-align-in-center-p-content?fbclid=IwAR1XL8qcPei6nLmIJZxwbJ62NZwcI-URr5vFBCs1HJFsXdBZkQb2FPJqDEA
 # Getting Started with Create React App
