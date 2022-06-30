@@ -22,6 +22,7 @@ const Product = () => {
       .then((response) => response.json())
       .then((data) => window.location.reload());
     // window.location.reload();
+    toast('delevered')
   };
   const quantityRef = useRef(0);
   // handle restore
@@ -39,7 +40,7 @@ const Product = () => {
       .then((response) => response.json())
       .then((data) => window.location.reload());
 
-    toast("product quantity updated");
+    toast("product restoked");
   };
   return (
     <div className="bike">

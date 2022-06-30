@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import UseProducts from "../hooks/UseProducts";
 import "./Manage.css";
 
@@ -15,10 +16,10 @@ const Manage = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           const newProducts = products.filter((product) => product._id !== id);
           setProducts(newProducts);
         });
+        toast('item deleted')
     }
   };
 

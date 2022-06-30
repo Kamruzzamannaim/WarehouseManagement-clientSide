@@ -1,4 +1,6 @@
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 const AddNewItem = () => {
     const [user] = useAuthState(auth);
@@ -11,9 +13,8 @@ const AddNewItem = () => {
         const quantity= event.target.quantity.value;
         const supplier= event.target.supplier.value;
         const description=event.target.description.value;
-        console.log(name,img,price,quantity,supplier,description,email);
         const newItem={name,img,price,quantity,supplier,description,email};
-        // https://bike-web-server.herokuapp.com/
+       
         fetch('https://bike-web-server.herokuapp.com/bike',{
             method:'POST',
             headers:{
@@ -23,6 +24,8 @@ const AddNewItem = () => {
         })
         .then(res=>res.json())
         .then(data=>console.log(data))
+        toast('item added')
+       
         
 }
    
@@ -40,6 +43,7 @@ const AddNewItem = () => {
                 
                 
             </form>
+           
         </div>
     );
 };
