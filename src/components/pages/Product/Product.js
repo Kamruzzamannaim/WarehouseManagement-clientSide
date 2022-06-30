@@ -75,7 +75,7 @@ const Product = () => {
         <input
           className="btn btn-outline-primary"
           type="submit"
-          value="restore"
+          value="restoke"
           onClick={() => handleRestore(product[0]?._id)}
         />
       </div>
